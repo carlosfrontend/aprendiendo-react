@@ -2,13 +2,14 @@ import { Square } from './Square'
 import { PropTypes } from 'prop-types'
 
 export const WinnerModal = ({ winner, resetGame }) => {
+  const tieLogo = '🤝'
   const winnerText = winner === false ? 'Empate' : 'Ganó: '
   if (winner === null) return null
   return (
     <section className='winner'>
       <div className='text'>
         <h2>{winnerText}</h2>
-        <header className='win'>{winner && <Square>{winner}</Square>}</header>
+        <header className='win'>{winner ? <Square>{winner}</Square> : <Square>{tieLogo}</Square>}</header>
         <footer>
           <button onClick={resetGame}>Empezar de nuevo</button>
         </footer>
