@@ -1,22 +1,22 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types'
 
 export const Square = ({ children, isSelected, updateBoard, index }) => {
-  const className = `square ${isSelected ? "is-selected" : ""}`;
+  const className = `square ${isSelected ? 'is-selected' : ''}`
 
   const handleClick = () => {
-    updateBoard(index);
-  };
+    updateBoard(index)
+  }
 
   return (
     <div onClick={handleClick} className={className}>
       {children}
     </div>
-  );
-};
+  )
+}
 
 Square.propTypes = {
   children: PropTypes.node,
   isSelected: PropTypes.bool,
   updateBoard: PropTypes.func,
-  index: PropTypes.number,
-};
+  index: PropTypes.number
+}

@@ -1,52 +1,52 @@
-import { useState } from "react";
-import "./styles/App.css";
-import TwitterFollowCard from "./TwitterFollowCard";
-import OpenIcon from "./icons/OpenIcon";
-import CloseIcon from "./icons/CloseIcon";
+import { useState } from 'react'
+import './styles/App.css'
+import TwitterFollowCard from './TwitterFollowCard'
+import OpenIcon from './icons/OpenIcon'
+import CloseIcon from './icons/CloseIcon'
 
-function App() {
-  const [showMore, setShowMore] = useState(false);
+function App () {
+  const [showMore, setShowMore] = useState(false)
   const handleShowMore = () => {
-    setShowMore(!showMore);
-  };
+    setShowMore(!showMore)
+  }
   const [avatars, setAvatars] = useState([
     {
-      name: "Monica Crauss",
-      username: "@MonicaCrauss",
+      name: 'Monica Crauss',
+      username: '@MonicaCrauss',
       imageId: 39,
-      isFollowing: false,
+      isFollowing: false
     },
     {
-      name: "Sarah Jhonson",
-      username: "@SarahJhonson",
+      name: 'Sarah Jhonson',
+      username: '@SarahJhonson',
       imageId: 16,
-      isFollowing: true,
+      isFollowing: true
     },
     {
-      name: "Josseph Joestar",
-      username: "@JossephJoestar",
+      name: 'Josseph Joestar',
+      username: '@JossephJoestar',
       imageId: 52,
-      isFollowing: false,
+      isFollowing: false
     },
     {
-      name: "Shogun Lee",
-      username: "shogunlee",
+      name: 'Shogun Lee',
+      username: 'shogunlee',
       imageId: 25,
-      isFollowing: true,
+      isFollowing: true
     },
     {
-      name: "Mikasa Ackerman",
-      username: "@MikasaAckerman",
+      name: 'Mikasa Ackerman',
+      username: '@MikasaAckerman',
       imageId: 12,
-      isFollowing: false,
+      isFollowing: false
     },
     {
-      name: "Naruto Uzumaki",
-      username: "@NarutoUzumaki",
+      name: 'Naruto Uzumaki',
+      username: '@NarutoUzumaki',
       imageId: 3,
-      isFollowing: true,
-    },
-  ]);
+      isFollowing: true
+    }
+  ])
 
   return (
     <>
@@ -72,11 +72,11 @@ function App() {
             setAvatars={setAvatars}
           />
         ))}
-      <button onClick={handleShowMore} className="tw-followCard-showMore">
-        {showMore ? `Mostrar menos` : `Mostrar más`} {showMore ?<OpenIcon/>  :<CloseIcon/>}
+      <button onClick={handleShowMore} className='tw-followCard-showMore'>
+        {showMore ? 'Mostrar menos' : 'Mostrar más'} {showMore ? <OpenIcon /> : <CloseIcon />}
       </button>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
