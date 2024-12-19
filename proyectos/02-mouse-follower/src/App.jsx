@@ -50,7 +50,7 @@ const FollowMouse = () => {
   )
 }
 
-function App() {
+function App () {
   return (
     <main>
       <FollowMouse />

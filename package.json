@@ -9,8 +9,16 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "dependencies": {
+    "standard": "^17.1.2"
+  },
   "devDependencies": {
-    "standard": "17.1.2"
+    "eslint": "^8.57.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.6.0",
+    "eslint-plugin-react": "^7.37.2"
   },
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"
