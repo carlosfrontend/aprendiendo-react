@@ -4,7 +4,7 @@ import TwitterFollowCard from './TwitterFollowCard'
 import OpenIcon from './icons/OpenIcon'
 import CloseIcon from './icons/CloseIcon'
 
-function App() {
+function App () {
   const [showMore, setShowMore] = useState(false)
   const handleShowMore = () => {
     setShowMore(!showMore)

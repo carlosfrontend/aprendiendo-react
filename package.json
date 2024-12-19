@@ -1,24 +1,18 @@
 {
   "name": "aprendiendo-react",
   "version": "1.0.0",
+  "description": "> [!NOTE] > Serie de proyectos hechos con React a través de la herramienta Vite para repasar los principales conceptos.",
   "main": "index.js",
+  "workspaces": [
+    "proyectos/*"
+  ],
   "scripts": {
-    "lint": "standard ."
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "standard": "^17.1.2"
-  },
   "devDependencies": {
-    "eslint": "^8.57.1",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-n": "^16.6.2",
-    "eslint-plugin-promise": "^6.6.0",
-    "eslint-plugin-react": "^7.37.2"
+    "standard": "^17.1.2"
   },
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"

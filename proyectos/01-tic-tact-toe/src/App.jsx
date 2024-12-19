@@ -7,7 +7,7 @@ import { checkWinner, checkEndGame } from './logic/board'
 import { WinnerModal } from './components/WinnerModal'
 import { resetGameStorage, saveGameToStorage } from './logic/storage'
 
-function App() {
+function App () {
   const [board, setBoard] = useState(() => {
     // Comprobamos si hay un tablero guardado en el localStorage
     // si lo hay lo devolvemos, en caso contrario un tablero vacio
