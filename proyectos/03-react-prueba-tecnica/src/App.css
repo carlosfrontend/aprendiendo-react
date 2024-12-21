@@ -1,0 +1,51 @@
+main h1{
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section button{
+    margin: 10px;
+}
+
+section p{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: left;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+
+    border-radius: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    section{
+        flex-direction: column;
+    }
+    aside{
+        display: flex;
+        margin-top: 2em;
+        max-width: 600px;
+        flex-direction: row;
+        gap:1em;
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 1em;
+    }
+    
+}
