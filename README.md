@@ -7,6 +7,7 @@
 
 - ~~[x] Twitter follow card~~
 - ~~[x] Tic tac toe game~~
+- ~~[x] React prueba técnica~~
 
 > [!TIP]
 > Puedes abrir cada proyecto desde la terminal y ejecutar el siguiente comando para verlo funcionando en tu navegador web:.
